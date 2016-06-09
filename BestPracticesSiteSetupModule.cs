@@ -125,7 +125,7 @@ namespace BestPracticesSiteSetup
 			var configManager = ConfigManager.GetManager();
 			var systemConfig = configManager.GetSection<SystemConfig>();
 			var cacheSettings = systemConfig.CacheSettings;
-
+			cacheSettings.DefaultProfile = "Long Cache"; 
 			foreach (OutputCacheProfileElement item in cacheSettings.Profiles.Elements)
 			{
 				item.WaitForPageOutputCacheToFill = true;
