@@ -1,5 +1,14 @@
 # BestPracticesSiteSetup
 This module sets up sitefinity in my "huge" opinion best practice. Note that this is using Sitefinity 9, but can be used with any version greater than 8, just modify the nuget package reference to use the version you have.
+##Using this module
+Download the project
+add it to your solution
+change nuget reference to match your version of Sitefinity
+add reference to this in SitefinityWebApp
+build
+Install module from Admin portal Administration > Modules & Services > BestPracticeSiteSetup
+This will modify the configs as pointed out below
+
 ##This Module Does
 ###Pages
 -Turns of inline page editing
